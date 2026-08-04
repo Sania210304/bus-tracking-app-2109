@@ -1,0 +1,151 @@
+@import "tailwindcss";
+
+:root {
+  --bg-surface: #F9F7F2;
+  --bg-surface-low: #E5E2DA;
+  --bg-surface-container: #EAE7E0;
+  --bg-surface-high: #D4D0C5;
+  --text-primary: #1A1A1A;
+  --text-on-surface: #1A1A1A;
+  --text-on-surface-variant: #5A5852;
+  --border-outline-variant: rgba(26, 26, 26, 0.12);
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  font-family: 'Material Symbols Outlined', sans-serif;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+}
+
+.icon-fill-1 {
+  font-variation-settings: 'FILL' 1;
+}
+
+/* Editorial Font Helper Classes */
+.font-serif-display {
+  font-family: 'Playfair Display', 'Newsreader', Georgia, serif;
+}
+
+.font-editorial-body {
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.font-headline-lg-mobile {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 600;
+}
+
+.font-code-sm {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.font-label-caps {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.font-body-md {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+/* Custom Spacing & Helper Utilities */
+.px-margin-mobile {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.p-unit-3 {
+  padding: 16px;
+}
+
+.p-unit-2 {
+  padding: 10px;
+}
+
+.mb-unit-2 {
+  margin-bottom: 8px;
+}
+
+.gap-unit-1 {
+  gap: 6px;
+}
+
+.gap-unit-2 {
+  gap: 8px;
+}
+
+.gap-unit-6 {
+  gap: 24px;
+}
+
+.mt-unit-4 {
+  margin-top: 16px;
+}
+
+.px-unit-2 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* Route & Radar Animations */
+@keyframes radar-pulse {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(2.4);
+    opacity: 0;
+  }
+}
+
+.animate-radar {
+  animation: radar-pulse 2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+@keyframes bus-dash {
+  to {
+    stroke-dashoffset: -40;
+  }
+}
+
+.animate-route-flow {
+  stroke-dasharray: 8 6;
+  animation: bus-dash 1.5s linear infinite;
+}
+
+/* Custom Editorial Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F9F7F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4D0C5;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1A1A1A;
+}
+
+

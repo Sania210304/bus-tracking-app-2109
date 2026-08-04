@@ -1,0 +1,6 @@
+{
+  "name": "College Bus Tracking System",
+  "description": "Real-time fleet tracking dashboard and technical portfolio showcase featuring live bus telemetry, route monitoring, metrics analytics, and technical architecture.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
